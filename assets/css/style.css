@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'The Seasons';
+  src: url('/assets/fonts/theseasons-regular.otf') format('otf');
+  font-weight: 200, 300, 400, 500, 600, 700, 800;
+}
+
 .main-container {
   width: 90%;
   max-width: 1289px;
@@ -70,7 +76,7 @@ nav .icons {
   position: absolute;
   inset: 0;
   padding: 5%;
-  top: 22px;
+  /* top: 22px; */
 }
 
 #mobile-nav .content .top-sec {
@@ -165,4 +171,122 @@ nav .icons {
   gap: 8.5px;
   justify-content: center;
   margin-top: 30px;
+}
+
+/* ======================== banner ======================== */
+#banner {
+  width: 100%;
+  /* height: 798px; */
+  background-image: url("/assets/images/banner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+#banner .content {
+  width: 90%;
+  padding-top: 38px;
+  padding-bottom: 144px;
+  max-width: 1289px;
+  margin: 0 auto;
+}
+
+#banner .content h1 {
+  max-width: 837px;
+  color: #25292E;
+  font-family: The Seasons;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 47px;
+}
+
+#banner .content .desc h2 {
+  color: #7C819E;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  margin-top: 18px;
+  margin-bottom: 10px;
+}
+
+#banner .content .desc p {
+  color: #7C819E;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  max-width: 676.039px;
+  margin-bottom: 34px;
+}
+
+#banner .content .shop-now {
+  padding: 11.5px 51px 11.5px 52px;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 30px;
+  background: #25292E;
+  color: white;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+#banner .content .divider {
+  margin-top: 51px;
+  height: 0px;
+  border: 1px #25292E solid;
+}
+
+#banner .content .review {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 22px;
+  align-items: center;
+}
+
+#banner .content .review p svg {
+  height: 20px;
+  transform: translateY(4px);
+}
+
+#banner .content .review p .reviewer {
+  display: inline-flex;
+  align-items: center;
+  gap: 7.5px;
+  transform: translateY(8px);
+}
+
+#banner .content .review p .reviewer img {
+  width: 27.806px;
+  height: 27.806px;
+  border-radius: 100px;
+}
+
+#banner .content .review p .reviewer .rv-name {
+  color: #000A43;
+  font-family: Inter;
+  font-size: 13.012px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 13.012px;
+}
+
+#banner .content .review p {
+  color: #25292E;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  width: 608.523px;
+}
+
+#banner .content .review .certificates {
+  height: 47px;
 }
