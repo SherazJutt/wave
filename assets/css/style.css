@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  width: 90%;
+  max-width: 1289px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* navbar */
+nav {
+  padding: 18px 0;
+}
+
+nav .logo {
+  width: 115px;
+  height: 28px;
+}
+
+nav .links {
+  list-style: none;
+  gap: 40px;
+}
+
+nav .links a {
+  text-decoration: none;
+  color: #000A43;
+  font-weight: 700;
+}
+
+nav .links li {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+nav .icons {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+#hamburger {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* mobile nav */
+#mobile-nav {
+  width: 100%;
+  height: 100dvh;
+  position: fixed;
+  inset: 0;
+  left: -100%;
+  transition: 350ms;
+}
+
+#mobile-nav .bg-wave {
+  width: 100%;
+  height: 100%;
+}
+
+#mobile-nav .content {
+  position: absolute;
+  inset: 0;
+  padding: 5%;
+  top: 22px;
+}
+
+#mobile-nav .content .top-sec {
+  display: flex;
+  justify-content: space-between;
+}
+
+#mobile-nav .content .mobile-links {
+  list-style: none;
+  margin-top: 50px;
+}
+
+#mobile-nav .content .mobile-links li {
+  margin-top: 28px;
+  text-align: center;
+}
+
+#mobile-nav .content .mobile-links li a {
+  text-decoration: none;
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+#mobile-nav .top-sec .logo {
+  width: 138px;
+  height: 45px;
+}
+
+#mobile-nav .top-sec .close {
+  cursor: pointer;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 54px;
+  justify-content: center;
+}
+
+.nav-buttons button {
+  background-color: transparent;
+  display: flex;
+  gap: 4px;
+  padding: 10px 20px;
+  align-items: center;
+  color: white;
+  border-radius: 30px;
+  border: 1px solid #FFF6F6;
+
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.nav-buttons button.cart {
+  background-color: white;
+  color: #00316F;
+}
+
+/* info */
+#mobile-nav .info {
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 30px;
+}
+
+#mobile-nav .info .number {
+  font-size: 17.683px;
+  line-height: 22.736px;
+}
+
+#mobile-nav .info .email {
+  color: #FFF;
+  font-size: 17.683px;
+  line-height: 22.736px;
+  margin-top: 6px;
+}
+
+#mobile-nav .social-icons {
+  list-style: none;
+  display: flex;
+  gap: 8.5px;
+  justify-content: center;
+  margin-top: 30px;
+}
