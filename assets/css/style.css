@@ -290,3 +290,16 @@ nav .icons {
 #banner .content .review .certificates {
   height: 47px;
 }
+
+#banner .content .w-f {
+  position: relative;
+  display: inline-block;
+}
+
+#banner .content .w-f::after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  /* background-image: ""; */
+  display: block;
+}
