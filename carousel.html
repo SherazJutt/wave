@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+</head>
+
+<body>
+
+    <style>
+        .slick-slide {
+            transition: all 500ms;
+        }
+
+        @media (max-width:1200px) {
+
+            .slick-slide.slick-current.slick-active+div,
+            .slick-slide.slick-current.slick-active+div+div+div {
+                margin-top: 50px;
+            }
+
+            .slick-slide.slick-current.slick-active+div+div {
+                margin-top: 100px;
+            }
+        }
+
+        @media (min-width:1200px) {
+
+            .slick-slide.slick-current.slick-active+div,
+            .slick-slide.slick-current.slick-active+div+div+div {
+                margin-left: 60px;
+            }
+
+            .slick-slide.slick-current.slick-active+div+div {
+                margin-left: 100px;
+            }
+        }
+    </style>
+
+    <div style="padding: 50px 40px;">
+        <div class="slickslider">
+            <div style="padding: 10px;background-color: red; margin-bottom: 5px;">your content 1</div>
+            <div style="padding: 10px;background-color: red; margin-bottom: 5px;">your content 2</div>
+            <div style="padding: 10px;background-color: red; margin-bottom: 5px;">your content 3</div>
+            <div style="padding: 10px;background-color: red; margin-bottom: 5px;">your content 4</div>
+            <div style="padding: 10px;background-color: red; margin-bottom: 5px;">your content 5</div>
+            <div style="padding: 10px;background-color: red; margin-bottom: 5px;">your content 6</div>
+            <div style="padding: 10px;background-color: red; margin-bottom: 5px;">your content 7</div>
+            <div style="padding: 10px;background-color: red; margin-bottom: 5px;">your content 8</div>
+            <div style="padding: 10px;background-color: red; margin-bottom: 5px;">your content 9</div>
+            <div style="padding: 10px;background-color: red; margin-bottom: 5px;">your content 10</div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $('.slickslider').slick({
+            arrows: false,
+            infinite: true,
+            slidesToShow: 5,
+            vertical: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            verticalSwiping: true,
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        vertical: false,
+                        // autoplay: false,
+                        verticalSwiping: false,
+                    }
+                }
+            ]
+        });
+    </script>
+</body>
+
+</html>

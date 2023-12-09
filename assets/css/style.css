@@ -434,4 +434,94 @@ nav .icons {
   font-weight: 700;
   line-height: 30px;
   margin-top: 37px;
+}
+
+#section-5 {
+  background-image: url("/assets/images/section-5-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding: 135px 0;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 40px;
+  border-radius: 40px;
+}
+#section-5 .content {
+  max-width: 75%;
+  margin: 0 auto;
+  position: relative;
+}
+#section-5 .content h3 {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 43.861px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 54.47px;
+  max-width: 669.946px;
+}
+#section-5 .content p {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  max-width: 421.222px;
+  margin-top: 20px;
+}
+#section-5 .content .payment-options {
+  width: 172px;
+  height: 39px;
+  margin-top: 12px;
+}
+#section-5 .content .or-price {
+  font-weight: 700;
+}
+#section-5 .content .add-to-cart {
+  text-decoration: none;
+  color: #000627;
+  font-family: Inter;
+  font-size: 19.414px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 29.121px;
+  width: 202px;
+  height: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 86px;
+  margin-top: 30px;
+}
+#section-5 .content .claims {
+  margin-top: 75px;
+}
+#section-5 .content .claims .claim {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+#section-5 .content .claims .claim svg {
+  width: 22.763px;
+  height: 22.654px;
+}
+#section-5 .content .claims .claim p {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 23.624px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32.483px;
+  margin: 0;
+}
+#section-5 .content .right-img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  right: 0;
+  width: 675px;
 }/*# sourceMappingURL=style.css.map */
