@@ -10,6 +10,73 @@
             }
         }
     }
+
+    // section 5
+
+    #section-5 {
+        background-position: bottom;
+        padding: 100px 0;
+
+        .al-content-right-img {
+            display: none;
+        }
+
+        .right-img {
+            display: block !important;
+        }
+
+        .content {
+            h3 {
+                font-size: 43.861px;
+                line-height: 54.47px;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 26px;
+            }
+
+            .al-content-right-img {
+                width: 100%;
+                max-width: 340px;
+            }
+
+            .payment-options {
+                width: 172px;
+                height: 39px;
+                margin-top: 12px;
+            }
+
+            .or-price {
+                font-weight: 700;
+            }
+
+            .claims {
+                margin-top: 75px;
+
+                .claim {
+                    svg {
+                        width: 22.763px;
+                        height: 22.654px;
+                    }
+
+                    p {
+                        font-size: 23.624px;
+                        line-height: 32.483px;
+                    }
+                }
+            }
+
+            .right-img {
+                position: absolute;
+                top: 200px;
+                bottom: 0;
+                margin: auto 0;
+                right: -85px;
+                width: 400px;
+            }
+        }
+    }
 }
 
 /* max 768px */
@@ -97,11 +164,32 @@
             }
         }
     }
+
+    #section-5 {
+        .right-img {
+            width: 500px !important;
+        }
+    }
 }
 
 /* 1440 */
 @media screen and (min-width:1440px) {
     #banner .content .review .certificates {
         display: block;
+    }
+
+    #section-5 {
+        .right-img {
+            width: 675px !important;
+        }
+    }
+}
+
+/* 1600 */
+@media screen and (min-width:1600px) {
+    #section-5 {
+        .right-img {
+            width: 877px !important;
+        }
     }
 }
