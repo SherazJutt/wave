@@ -632,38 +632,100 @@ nav .icons {
   width: 90%;
 }
 
+.faqs {
+  margin-top: 50px;
+}
+@media (min-width: 992px) {
+  .faqs {
+    margin-top: 150px;
+  }
+}
 .faqs .content {
-  width: 320px;
+  max-width: 813px;
   margin: 0 auto;
 }
 .faqs .content h2 {
-  font-size: 25px;
-  font-weight: 600;
-  line-height: 30px;
-  margin-top: 50px;
+  color: #000;
+  text-align: center;
+  font-family: The Seasons;
+  font-size: 47.745px;
+  font-weight: 400;
+  line-height: 48.621px;
 }
 .faqs .content p {
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 16.8px;
-  margin-top: 20px;
+  max-width: 726px;
+  color: #6B6B6B;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 24px auto 0 auto;
+  max-width: 726px;
 }
 
 .accordion-wrapper {
   margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 900px;
+  overflow: hidden;
+  position: relative;
+}
+@media (min-width: 1200px) {
+  .accordion-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.accordion-wrapper .show-more-main {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFF 50%);
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: end;
+}
+.accordion-wrapper .show-more-main button {
+  color: #018AF0;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 760px;
+  margin: 17px auto 0 auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+}
+@media (min-width: 1200px) {
+  .accordion {
+    max-width: 460px;
+  }
 }
 
 .accordion-heading {
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: Inter;
+  font-size: 18.821px;
+  font-style: normal;
   font-weight: 600;
-  line-height: 15.6px;
+  line-height: 25.665px;
+  cursor: pointer;
+  width: 100%;
   transition: 0.4s;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -671,54 +733,170 @@ nav .icons {
   display: flex;
   justify-content: space-between;
 }
+@media (min-width: 1200px) {
+  .accordion-heading {
+    max-width: 460px;
+  }
+}
 .accordion-heading .heading {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-.accordion-heading .heading .icon {
-  width: 30px;
-  height: 30px;
-  color: #9a9a9a;
-}
-
-.accordion-heading.active .icon {
-  color: #333333;
-}
-
-.accordion-heading .heading:hover {
-  color: #333333;
-}
-.accordion-heading .heading:hover .icon {
-  transition: 200ms;
-  color: #333333;
-}
-
-.accordion-heading:after {
-  content: "+";
-  color: #e10600;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-  font-size: 18px;
-}
-
-.accordion-heading.active:after {
-  content: "-";
-}
 
 .accordion-body {
-  padding: 0 0 0 69px;
-  background-color: white;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  font-size: 12px;
-  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+}
+@media (min-width: 1200px) {
+  .accordion-body {
+    max-width: 460px;
+  }
 }
 
-.grab-the-gold-stack .main-description {
-  margin: 0 auto;
-  margin-top: 20px;
-  max-width: 85%;
+/* 768px */
+@media screen and (min-width: 768px) {
+  /* section-3 */
+  #section-3 .benefits ul {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 74px auto 0 auto;
+  }
+  #section-5 {
+    background-position: bottom;
+    padding: 100px 0;
+  }
+  #section-5 .al-content-right-img {
+    display: none;
+  }
+  #section-5 .right-img {
+    display: block !important;
+  }
+  #section-5 .content h3 {
+    font-size: 43.861px;
+    line-height: 54.47px;
+  }
+  #section-5 .content p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  #section-5 .content .al-content-right-img {
+    width: 100%;
+    max-width: 340px;
+  }
+  #section-5 .content .payment-options {
+    width: 172px;
+    height: 39px;
+    margin-top: 12px;
+  }
+  #section-5 .content .or-price {
+    font-weight: 700;
+  }
+  #section-5 .content .claims {
+    margin-top: 75px;
+  }
+  #section-5 .content .claims .claim svg {
+    width: 22.763px;
+    height: 22.654px;
+  }
+  #section-5 .content .claims .claim p {
+    font-size: 23.624px;
+    line-height: 32.483px;
+  }
+  #section-5 .content .right-img {
+    position: absolute;
+    top: 200px;
+    bottom: 0;
+    margin: auto 0;
+    right: -85px;
+    width: 400px;
+  }
+}
+/* max 768px */
+@media screen and (max-width: 768px) {
+  /* section-3 */
+  #section-3 .benefits {
+    display: flex;
+    align-items: center;
+  }
+  #section-3 .benefits .end-img {
+    max-width: 320px;
+    max-height: 319px;
+  }
+  #section-3 .benefits .end-img img {
+    aspect-ratio: 16/9;
+    -o-object-position: right;
+       object-position: right;
+  }
+}
+@media screen and (min-width: 850px) {
+  #nav-links {
+    display: flex;
+  }
+  #hamburger {
+    display: none;
+  }
+  #section-4 h2 {
+    font-size: 73px;
+    line-height: 81px;
+  }
+  #section-4 p {
+    font-size: 16px;
+  }
+}
+/* 1024 */
+@media screen and (min-width: 1024px) {
+  #banner .content {
+    padding-top: 124px;
+  }
+  #banner .content h1 {
+    font-size: 82px;
+    line-height: 84px;
+  }
+  #banner .content .desc h2 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  #banner .content .desc p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  #banner .content .w-f::after {
+    transform: translateY(-9px);
+  }
+  /* section-3 */
+  #section-3 h2 {
+    font-size: 33px;
+    line-height: 49px;
+  }
+  #section-3 .benefits ul {
+    grid-template-columns: repeat(4, 1fr);
+    margin: 74px auto 0 auto;
+  }
+  #section-5 .right-img {
+    width: 500px !important;
+  }
+}
+/* 1440 */
+@media screen and (min-width: 1440px) {
+  #banner .content .review .certificates {
+    display: block;
+  }
+  #section-5 .right-img {
+    width: 675px !important;
+  }
+}
+/* 1600 */
+@media screen and (min-width: 1600px) {
+  #section-5 .right-img {
+    width: 877px !important;
+  }
 }/*# sourceMappingURL=style.css.map */
