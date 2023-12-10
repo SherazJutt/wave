@@ -1032,6 +1032,303 @@ nav .icons {
   }
 }
 
+footer {
+  position: relative;
+  margin-top: 56px;
+}
+footer img.desktop {
+  display: none;
+}
+@media (min-width: 1440px) {
+  footer img.desktop {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    display: block !important;
+  }
+}
+footer img.mobile {
+  display: none;
+}
+@media (max-width: 1440px) {
+  footer img.mobile {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    display: block !important;
+  }
+}
+footer > .content {
+  padding: 45px 0 65px 0;
+}
+@media (min-width: 1024px) {
+  footer > .content {
+    padding: 65px 0 100px 0;
+  }
+}
+@media (min-width: 1440px) {
+  footer > .content {
+    padding: 150px 0 280px 0;
+  }
+}
+@media (max-width: 1440px) {
+  footer > .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (min-width: 1440px) {
+  footer > .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1440px) {
+  footer > .content {
+    gap: 100px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1440px) {
+  footer > .content :first-child {
+    text-align: center;
+  }
+}
+footer > .content :first-child img {
+  width: 254px;
+  height: 91.787px;
+}
+footer > .content :first-child p {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  max-width: 344px;
+  margin: 16px 0;
+}
+@media (min-width: 768px) and (max-width: 1440px) {
+  footer > .content :first-child p {
+    max-width: 608px;
+    text-align: center;
+  }
+}
+@media (min-width: 1440px) {
+  footer > .content :first-child p {
+    margin: 44px 0;
+  }
+}
+footer > .content :first-child .Copyright {
+  color: rgba(240, 240, 240, 0.65);
+}
+@media (max-width: 1440px) {
+  footer > .content :first-child .Copyright {
+    display: none;
+  }
+}
+footer > .content div:nth-child(2) .social-icons {
+  list-style: none;
+  display: flex;
+  gap: 8.5px;
+  margin: 23px 0 40px 0;
+}
+@media (max-width: 1440px) {
+  footer > .content div:nth-child(2) .social-icons {
+    justify-content: center;
+  }
+}
+footer > .content div:nth-child(2) h4 {
+  display: none;
+}
+@media (min-width: 1440px) {
+  footer > .content div:nth-child(2) h4 {
+    display: block;
+    color: #FFF;
+    font-family: The Seasons;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20.9px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+    padding-bottom: 9.32px;
+  }
+}
+footer > .content div:nth-child(2) .gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+footer > .content div:nth-child(2) .gallery img {
+  max-width: 100%;
+}
+footer > .content div:nth-child(3) h4 {
+  display: none;
+}
+@media (min-width: 1024px) {
+  footer > .content div:nth-child(3) h4 {
+    color: #FFF;
+    font-family: The Seasons;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20.9px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+    padding-bottom: 9.32px;
+    display: block;
+  }
+}
+footer > .content div:nth-child(3) .address {
+  display: flex;
+  margin-top: 18px;
+  gap: 18px;
+}
+@media (max-width: 1024px) {
+  footer > .content div:nth-child(3) .address {
+    justify-content: center;
+  }
+  footer > .content div:nth-child(3) .address img {
+    display: none;
+  }
+  footer > .content div:nth-child(3) .address .content {
+    text-align: center;
+  }
+}
+footer > .content div:nth-child(3) .address img {
+  width: 108.928px;
+  height: 108.928px;
+}
+footer > .content div:nth-child(3) .address .content h5 {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  footer > .content div:nth-child(3) .address .content h5 {
+    text-align: left;
+  }
+}
+footer > .content div:nth-child(3) .address .content p {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+footer > .content div:nth-child(3) > .content h5 {
+  display: none;
+}
+@media (min-width: 1440px) {
+  footer > .content div:nth-child(3) > .content h5 {
+    color: #FFF;
+    font-family: The Seasons;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20.9px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+    padding-bottom: 9.32px;
+    margin-top: 28px;
+    display: block;
+  }
+}
+footer > .content div:nth-child(3) > .content .combo-input {
+  margin-top: 20px;
+  display: flex;
+  max-width: 330px;
+}
+footer > .content div:nth-child(3) > .content .combo-input * {
+  padding: 11.5px 23.5px;
+}
+footer > .content div:nth-child(3) > .content .combo-input input {
+  border: 1px solid #FFF;
+  border-radius: 30px 0 0 30px;
+  background-color: transparent;
+  color: rgba(240, 240, 240, 0.5);
+  width: 200px;
+  outline: none;
+}
+footer > .content div:nth-child(3) > .content .combo-input input::-moz-placeholder {
+  color: rgba(240, 240, 240, 0.5);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+}
+footer > .content div:nth-child(3) > .content .combo-input input::placeholder {
+  color: rgba(240, 240, 240, 0.5);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+}
+footer > .content div:nth-child(3) > .content .combo-input button {
+  border: 1px solid #FFF;
+  border-radius: 0 30px 30px 0;
+  color: #000835;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  cursor: pointer;
+}
+footer > .content div:nth-child(3) > .content ul {
+  list-style: none;
+  text-align: center;
+  margin-top: 16px;
+}
+@media (min-width: 1440px) {
+  footer > .content div:nth-child(3) > .content ul {
+    -moz-columns: 2;
+         columns: 2;
+    text-align: left;
+  }
+}
+footer > .content div:nth-child(3) > .content ul li {
+  color: rgba(255, 255, 255, 0.65);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+footer > .content div:nth-child(3) > .content .Copyright {
+  color: rgba(240, 240, 240, 0.65);
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  margin: 18px auto 0 auto;
+}
+@media (max-width: 450px) {
+  footer > .content div:nth-child(3) > .content .Copyright {
+    width: 75%;
+  }
+}
+@media (min-width: 1440px) {
+  footer > .content div:nth-child(3) > .content .Copyright {
+    display: none;
+  }
+}
+
 /* 768px */
 @media screen and (min-width: 768px) {
   /* section-3 */
