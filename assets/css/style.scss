@@ -1025,6 +1025,10 @@ nav .icons {
   margin-top: 32px;
   padding: 0 5%;
 
+  .hidden-af .card {
+    margin-top: 16px;
+  }
+
   @media (min-width:576px) {
     .hidden-af {
       display: none;

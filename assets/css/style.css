@@ -941,6 +941,9 @@ nav .icons {
   margin-top: 32px;
   padding: 0 5%;
 }
+#section-11 .hidden-af .card {
+  margin-top: 16px;
+}
 @media (min-width: 576px) {
   #section-11 .hidden-af {
     display: none;
